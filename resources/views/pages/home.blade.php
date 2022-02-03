@@ -32,7 +32,7 @@
                                     <li><a href='{{ asset('index_2.html') }}'>Slider Home</a></li>
                                 </ul>
                             </li>
-                            <li><a href='{{ asset('about.html') }}'>Про нас</a></li>
+                            <li><a href='{{ asset('/about') }}'>Про нас</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="sub-menu">
                                     <li><a href="404.html">404 page</a></li>
