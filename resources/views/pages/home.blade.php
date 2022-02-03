@@ -44,7 +44,7 @@
                                     <li><a href="shop.html">Shop</a></li>
                                 </ul>
                             </li>
-                            <li><a href="news.html">Новини</a>
+                            <li><a href='{{ asset('/news') }}'>Новини</a>
                                 <ul class="sub-menu">
                                     <li><a href="news.html">News</a></li>
                                     <li><a href="single-news.html">Single News</a></li>
