@@ -15,10 +15,10 @@
                     <nav class="main-menu">
                         <ul>
                             <li class="current-list-item"><a href='{{ asset('/home') }}'>Головна сторінка</a>
-                                {{--                                <ul class="sub-menu">--}}
-                                {{--                                    <li><a href='{{ asset('/home') }}'>Головна сторінка</a></li>--}}
-                                {{--                                    <li><a href='{{ asset('index_2.html') }}'>Slider Home</a></li>--}}
-                                {{--                                </ul>--}}
+{{--                                <ul class="sub-menu">--}}
+{{--                                    <li><a href='{{ asset('/home') }}'>Головна сторінка</a></li>--}}
+{{--                                    <li><a href='{{ asset('index_2.html') }}'>Slider Home</a></li>--}}
+{{--                                </ul>--}}
                             </li>
                             <li><a href='{{ asset('/about') }}'>Про нас</a></li>
                             <li><a href="#">Цікавинки</a>
