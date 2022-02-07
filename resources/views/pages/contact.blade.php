@@ -16,33 +16,14 @@
 
 @include('pages.header')
 
-<!-- search area -->
-<div class="search-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <span class="close-btn"><i class="fas fa-window-close"></i></span>
-                <div class="search-bar">
-                    <div class="search-bar-tablecell">
-                        <h3>Search For:</h3>
-                        <input type="text" placeholder="Keywords">
-                        <button type="submit">Search <i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end search arewa -->
-
 <!-- breadcrumb-section -->
 <div class="breadcrumb-section breadcrumb-bg">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
                 <div class="breadcrumb-text">
-                    <p>Get 24/7 Support</p>
-                    <h1>Contact us</h1>
+                    <p>Звяжіться з нами</p>
+                    <h1>Цілодобово</h1>
                 </div>
             </div>
         </div>
@@ -56,39 +37,39 @@
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="form-title">
-                    <h2>Have you any question?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
+                    <h2>У вас є заптання?</h2>
+                    <p>Ви можете відправити нам листа на електрону адресу або звязатися з нами за телефонами які вказані на нашому сайті</p>
                 </div>
                 <div id="form_status"></div>
                 <div class="contact-form">
                     <form type="POST" id="fruitkha-contact" onSubmit="return valid_datas( this );">
                         <p>
-                            <input type="text" placeholder="Name" name="name" id="name">
+                            <input type="text" placeholder="Імя" name="name" id="name">
                             <input type="email" placeholder="Email" name="email" id="email">
                         </p>
                         <p>
-                            <input type="tel" placeholder="Phone" name="phone" id="phone">
-                            <input type="text" placeholder="Subject" name="subject" id="subject">
+                            <input type="tel" placeholder="Телефон" name="phone" id="phone">
+                            <input type="text" placeholder="Тема" name="subject" id="subject">
                         </p>
-                        <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
+                        <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Повідомлення"></textarea></p>
                         <input type="hidden" name="token" value="FsWga4&@f6aw" />
-                        <p><input type="submit" value="Submit"></p>
+                        <p><input type="submit" value="Відправити"></p>
                     </form>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="contact-form-wrap">
                     <div class="contact-form-box">
-                        <h4><i class="fas fa-map"></i> Shop Address</h4>
-                        <p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
+                        <h4><i class="fas fa-map"></i> Адреса магазину</h4>
+                        <p>Україна, Київ<br> Святошинський район <br> пр. Перемоги 112</p>
                     </div>
                     <div class="contact-form-box">
-                        <h4><i class="far fa-clock"></i> Shop Hours</h4>
-                        <p>MON - FRIDAY: 8 to 9 PM <br> SAT - SUN: 10 to 8 PM </p>
+                        <h4><i class="far fa-clock"></i> Графік роботи</h4>
+                        <p>Понеділок - Пятниця: з 8:00 до 18:00  <br> Субота - Неділя: з 10:00 до 15:00 </p>
                     </div>
                     <div class="contact-form-box">
-                        <h4><i class="fas fa-address-book"></i> Contact</h4>
-                        <p>Phone: +00 111 222 3333 <br> Email: support@fruitkha.com</p>
+                        <h4><i class="fas fa-address-book"></i> Контакти</h4>
+                        <p>Телефон: (097)111-11-11 <br> Email: hello@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +83,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p> <i class="fas fa-map-marker-alt"></i> Find Our Location</p>
+                <p> <i class="fas fa-map-marker-alt"></i> Наша локація</p>
             </div>
         </div>
     </div>
@@ -115,76 +96,7 @@
 </div>
 <!-- end google map section -->
 
-
-<!-- footer -->
-<div class="footer-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-box about-widget">
-                    <h2 class="widget-title">About us</h2>
-                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-box get-in-touch">
-                    <h2 class="widget-title">Get in Touch</h2>
-                    <ul>
-                        <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-                        <li>support@fruitkha.com</li>
-                        <li>+00 111 222 3333</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-box pages">
-                    <h2 class="widget-title">Pages</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Shop</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-box subscribe">
-                    <h2 class="widget-title">Subscribe</h2>
-                    <p>Subscribe to our mailing list to get the latest updates.</p>
-                    <form action="index.html">
-                        <input type="email" placeholder="Email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end footer -->
-
-<!-- copyright -->
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
-            </div>
-            <div class="col-lg-6 text-right col-md-12">
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end copyright -->
+@include('pages.footer')
 
 @include('pages.scripts')
 
