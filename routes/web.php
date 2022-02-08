@@ -19,6 +19,7 @@ Route::get('/contact', 'ContactController@contact')->name('contact');
 
 Route::get('/admin_home', 'Admin\HomeController@home')->name('admin_home');
 Route::get('/admin_about', 'Admin\AboutController@about')->name('admin_about');
+Route::get('/admin_news', 'Admin\NewsController@news')->name('admin_news');
 
 
 
