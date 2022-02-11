@@ -18,6 +18,13 @@ Route::get('/news', 'NewsController@news')->name('news');
 Route::get('/contact', 'ContactController@contact')->name('contact');
 
 Route::get('/admin_home', 'Admin\HomeController@home')->name('admin_home');
+Route::get('/admin_home_form', 'Admin\HomeController@home_form')->name('home_form');
+Route::post('/save_home', 'Admin\HomeController@save_home')->name('save_home');
+Route::get('/home_edit/{id}', 'Admin\HomeController@edit_home')->name('edit_home');
+Route::get('/home_delete/{id}', 'Admin\HomeController@delete_home')->name('delete_home');
+
+
+
 Route::get('/admin_about', 'Admin\AboutController@about')->name('admin_about');
 Route::get('/admin_news', 'Admin\NewsController@news')->name('admin_news');
 Route::get('/admin_contact', 'Admin\ContactController@contact')->name('admin_contact');
