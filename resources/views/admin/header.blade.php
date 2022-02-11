@@ -82,14 +82,14 @@
                         <li class="nav-item">
                             <a href="{{ route('admin_home') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Нова ТОП продукція</p>
+                                <p>Сторінка ТОП продукція</p>
                             </a>
                         </li>
                         <li class="nav-item">
-{{--                            <a href="{{ route('brands_form') }}" class="nav-link">--}}
-{{--                                <i class="far fa-circle nav-icon"></i>--}}
-{{--                                <p>Новий бренди</p>--}}
-{{--                            </a>--}}
+                            <a href="{{ route('home_form') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Нова ТОП продукція</p>
+                            </a>
                         </li>
                     </ul>
                 </li>
