@@ -16,6 +16,7 @@ Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/about', 'AboutController@about')->name('about');
 Route::get('/news', 'NewsController@news')->name('news');
 Route::get('/contact', 'ContactController@contact')->name('contact');
+Route::get('/basket', 'BasketController@basket')->name('basket');
 
 Route::get('/admin_home', 'Admin\HomeController@home')->name('admin_home');
 Route::get('/admin_home_form', 'Admin\HomeController@home_form')->name('home_form');
