@@ -138,8 +138,7 @@
                     </div>
                     <h3>{{ $home->name }}</h3>
                     <p class="product-price">{{ $home->price }}</p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Додати в корзину</a>
-{{--                    <a class="entry-title" href="{{ route('/category', ['slug' => $dataBrand->slug]) }}" rel="bookmark">{{ $dataBrand->name }}</a>--}}
+                    <a href="{{ route('basket', ['id' => $home->id]) }}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Додати в корзину</a>
                 </div>
             </div>
             @endforeach
