@@ -18,6 +18,9 @@ Route::get('/news', 'NewsController@news')->name('news');
 Route::get('/contact', 'ContactController@contact')->name('contact');
 Route::get('/basket', 'BasketController@basket')->name('basket');
 
+Route::get('/add_basket/{product}', 'BasketController@add')->name('add_basket');
+Route::get('/delete_basket/{id}', 'BasketController@delete')->name('delete_basket');
+
 Route::get('/admin_home', 'Admin\HomeController@home')->name('admin_home');
 Route::get('/admin_home_form', 'Admin\HomeController@home_form')->name('home_form');
 Route::post('/save_home', 'Admin\HomeController@save_home')->name('save_home');
@@ -32,10 +35,11 @@ Route::get('/admin_contact', 'Admin\ContactController@contact')->name('admin_con
 
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
+

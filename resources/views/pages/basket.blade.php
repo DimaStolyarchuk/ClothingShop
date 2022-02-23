@@ -44,18 +44,18 @@
                             <th class="product-name">Назва</th>
                             <th class="product-price">Ціна</th>
                             <th class="product-quantity">Кількість</th>
-                            <th class="product-total">Всього</th>
                         </tr>
                         </thead>
                         <tbody>
-{{--                        <tr class="table-body-row">--}}
-{{--                            <td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>--}}
-{{--                            <td class="product-image"><img src="assets/img/products/product-img-1.jpg" alt=""></td>--}}
-{{--                            <td class="product-name">Strawberry</td>--}}
-{{--                            <td class="product-price">$85</td>--}}
-{{--                            <td class="product-quantity"><input type="number" placeholder="0"></td>--}}
-{{--                            <td class="product-total">1</td>--}}
-{{--                        </tr>--}}
+                        @foreach($products as $product)
+                        <tr class="table-body-row">
+                            <td class="product-remove"><a href="{{ route('delete_basket', ['id' => $product->id]) }}"><i class="far fa-window-close"></i></a></td>
+                            <td class="product-image"><img src="{{ asset('storage/img/'. $product->product->image) }}" alt=""></td>
+                            <td class="product-name">{{ $product->product->name }}</td>
+                            <td class="product-price">{{ $product->product->price }}</td>
+                            <td class="product-quantity"><input type="number" placeholder="0" value="{{ $product->quantity }}"></td>
+                        </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
