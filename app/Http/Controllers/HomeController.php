@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\AdminHome;
+
+use App\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        $homes = AdminHome::get();
+        $homes = Product::get();
         return view('pages.home', compact('homes'));
     }
 }
